@@ -29,7 +29,7 @@ with open("README.md") as readme:
     
 setup(
     name='ObserverAPI',
-    version='1.0.2',
+    version='1.0.3',
     license='MIT',
     author="Polsulpicien",
     description="Observer API Wrapper in Python",
@@ -38,8 +38,9 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/Polsulpicien/ObserverAPI",
     project_urls={
-        "Documentation": "https://observerapi.readthedocs.io/en/latest/",
+        "Documentation": "https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md",
         "Issue tracker": "https://github.com/Polsulpicien/ObserverAPI/issues",
+        "Support": "https://discord.com/invite/xm9QX3Q",
       },
     packages=find_packages(),
     classifiers=[
