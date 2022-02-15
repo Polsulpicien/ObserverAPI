@@ -26,9 +26,6 @@ Each class has a `data` argument so you can get the raw data if you want/need it
 - `await stats.get() -> Stats`  
   *This function is a [coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine).*
 
-  - Parameters:
-    - None
-
   - Raises:
     - APIError > An error occured.
 
