@@ -103,9 +103,9 @@ Each class has a `data` argument so you can get the raw data if you want/need it
 
   - Parameters:
     - `uuid` ([str](https://docs.python.org/3/library/functions.html#str)) > A Player UUID
-    - `type` ([str](https://docs.python.org/3/library/functions.html#int)) > A [Observer API Type](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/parameters.md#type)
-    - `gamemode` ([str](https://docs.python.org/3/library/functions.html#int)) > A [Observer API Gamemode](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/parameters.md#gamemode)
-    - `stat` ([str](https://docs.python.org/3/library/functions.html#int)) > A [Observer API Stat](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/parameters.md#stat)
+    - `type` ([str](https://docs.python.org/3/library/functions.html#str)) > A [Observer API Type](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/parameters.md#type)
+    - `gamemode` ([str](https://docs.python.org/3/library/functions.html#str)) > A [Observer API Gamemode](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/parameters.md#gamemode)
+    - `stat` ([str](https://docs.python.org/3/library/functions.html#str)) > A [Observer API Stat](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/parameters.md#stat)
 
   - Raises:
     - APIError > An error occured.
