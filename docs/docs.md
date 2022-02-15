@@ -8,7 +8,7 @@
 > Returns the count of tracked players, total number of commands executed and verified players for Observer  
 -  [`lookback`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#lookback) > Wrapper on the [Lookback](https://api.invite.observer/v1/lookback) endpoint of the Observer API
 > Get the stats for a player from X days ago  
--  `ranking` > Wrapper on the [Ranking](https://api.invite.observer/v1/ranking) endpoint of the Observer API
+-  [`ranking`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#ranking) > Wrapper on the [Ranking](https://api.invite.observer/v1/ranking) endpoint of the Observer API
 > Get the ranking for a player on a specific leaderboard  
 -  `daily` > Wrapper on the [Daily](https://api.invite.observer/v1/daily) endpoint of the Observer API
 > Get the stats of a player from yesterday  
@@ -53,8 +53,25 @@ Each class has a `data` argument so you can get the raw data if you want/need it
     - APIError > An error occured.
 
   - Return:
-    - Player Class
+    - [Player Class](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/player.md)
 
+  - Return Type:
+    - [Player](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/objects/player.py#L5)
+
+## Ranking
+
+- `await ranking.get(uuid : str, type : str, gamemode : str, stat : str) -> Lookback`  
+  *This function is a [coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine).*
+
+  - Parameters:
+    - `uuid` ([str](https://docs.python.org/3/library/functions.html#str)) > A Player UUID
+    - `type` ([str](https://docs.python.org/3/library/functions.html#int)) > A [Observer API Type]()
+
+  - Raises:
+    - APIError > An error occured.
+
+  - Return:
+    - [Player Class](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/player.md)
 
   - Return Type:
     - [Player](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/objects/player.py#L5)
