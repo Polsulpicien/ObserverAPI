@@ -4,7 +4,7 @@ import json
 from .exception import APIError, HistoryLimitError
 from .objects.leaderboards import Leaderboards
 from .objects.ranking import Ranking
-from .objects.player import Daily, Weekly, Monthly, Lookback, Formatted
+from .objects.player import Player, Formatted
 from .objects.api import Stats
 
 class Observer:
@@ -23,14 +23,14 @@ class Observer:
         except Exception as error:
             raise APIError(error, 0)
         
-    async def get_lookback_stats(self, uuid, lookback) -> Lookback:
+    async def get_lookback_stats(self, uuid, lookback) -> Player:
         if lookback>100:
             raise HistoryLimitError
         try:
             async with aiohttp.request("GET", f"{self.api}/lookback?uuid={uuid}&lookback={lookback}") as response:
                 json = await response.json()
                 if json['success']==True:
-                    return Lookback(json)
+                    return Player(json, "lookback")
                 else:
                     raise APIError(json['cause'], response.status)
         except Exception as error:
@@ -58,34 +58,34 @@ class Observer:
         except Exception as error:
             raise APIError(error, 0)
 
-    async def get_daily_stats(self, uuid) -> Daily:
+    async def get_daily_stats(self, uuid) -> Player:
         try:
             async with aiohttp.request("GET", f"{self.api}/daily?uuid={uuid}") as response:
                 json = await response.json()
                 if json['success']==True:
-                    return Daily(json)
+                    return Player(json, "daily")
                 else:
                     raise APIError(json['cause'], response.status)
         except Exception as error:
             raise APIError(error, 0)
 
-    async def get_weekly_stats(self, uuid) -> Weekly:
+    async def get_weekly_stats(self, uuid) -> Player:
         try:
             async with aiohttp.request("GET", f"{self.api}/weekly?uuid={uuid}") as response:
                 json = await response.json()
                 if json['success']==True:
-                    return Weekly(json)
+                    return Player(json, "weekly")
                 else:
                     raise APIError(json['cause'], response.status)
         except Exception as error:
             raise APIError(error, 0)
             
-    async def get_monthly_stats(self, uuid) -> Monthly:
+    async def get_monthly_stats(self, uuid) -> Player:
         try:
             async with aiohttp.request("GET", f"{self.api}/monthly?uuid={uuid}") as response:
                 json = await response.json()
                 if json['success']==True:
-                    return Monthly(json)
+                    return Player(json, "monthly")
                 else:
                     raise APIError(json['cause'], response.status)
         except Exception as error:

@@ -3,4 +3,4 @@ class Ranking:
         self.data = data
         self.rank = data.get("ranking", 0)
 
-    # will be improved in the future... or maybe not.
+    # will be improved in the future...

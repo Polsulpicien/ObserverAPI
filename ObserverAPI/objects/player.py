@@ -1,23 +1,3 @@
-class Daily:
-    def __init__(self, data):
-        self.data = data
-        self.player = Player(data, 'daily')
-
-class Weekly:
-    def __init__(self, data):
-        self.data = data
-        self.player = Player(data, 'weekly')
-
-class Monthly:
-    def __init__(self, data):
-        self.data = data
-        self.player = Player(data, 'monthly')
-
-class Lookback:
-    def __init__(self, data):
-        self.data = data
-        self.player = Player(data, 'lookback')
-
 class Formatted:
     def __init__(self, data):
         self.formatted = data.get("formatted", {})

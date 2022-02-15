@@ -5,4 +5,4 @@ class APIError(Exception):
 
 class HistoryLimitError(Exception):
     def __init__(self):
-        self.error = "Can not look back more than 100 days!"
+        self.error = "Can not look back more than 100 days!" 

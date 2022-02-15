@@ -6,10 +6,10 @@ async def main():
 
     # this is my UUID, Polsulpicien, I know I'm not very good :)
     lookback = await client.lookback.get("7f2996146af142948f9479d06f133874", 100)
-    print(lookback.player.bedwars.level)
+    print(lookback.bedwars.level)
 
-    #api_stats = await client.stats.get()
-    #print(api_stats.trackedPlayers)
+    api_stats = await client.stats.get()
+    print(api_stats.trackedPlayers)
 
     leaderboard = await client.leaderboard.get("alltime", "bedwars", "wins", 1, 10)
     print(leaderboard.leaderboard)
