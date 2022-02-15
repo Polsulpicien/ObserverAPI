@@ -37,6 +37,10 @@ setup(
     keywords='ObserverAPI',
     long_description_content_type="text/markdown",
     url="https://github.com/Polsulpicien/ObserverAPI",
+    project_urls={
+        "Documentation": "https://observerapi.readthedocs.io/en/latest/",
+        "Issue tracker": "https://github.com/Polsulpicien/ObserverAPI/issues",
+      },
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
