@@ -2,25 +2,30 @@ from ObserverAPI import Observer
 import asyncio
 
 async def main():
-    client = await Observer() #define the client, provide an api key (when they add it)
+    client = await Observer() #define the client
 
-    # this is my UUID, Polsulpicien, I know I'm not very good :)
-    lookback = await client.lookback.get("7f2996146af142948f9479d06f133874", 100)
+    # Get the stats of Technoblade (UUID: b876ec32e396476ba1158438d83c67d4) 100 days ago
+    lookback = await client.lookback.get("b876ec32e396476ba1158438d83c67d4", 100)
     print(lookback.bedwars.level)
-
+    
+    # Observer API Stats
     api_stats = await client.stats.get()
     print(api_stats.trackedPlayers)
-
+    
+    # Get the Top 10 players, All-Time Bedwars Wins Leaderboard 
     leaderboard = await client.leaderboard.get("alltime", "bedwars", "wins", 1, 10)
     print(leaderboard.leaderboard)
     
+    # Get the second player on the leaderboard
     second_player_on_leaderboard = leaderboard.get_index(2)
     print(second_player_on_leaderboard.formatted, second_player_on_leaderboard.rank, second_player_on_leaderboard.value)
 
-    ranking = await client.ranking.get("7f2996146af142948f9479d06f133874", "alltime", "bedwars", "wins")
+    # Get Technoblade (UUID: b876ec32e396476ba1158438d83c67d4) leaderboard rank, in this case in the All-Time Bedwars Wins Leaderboard
+    ranking = await client.ranking.get("b876ec32e396476ba1158438d83c67d4", "alltime", "bedwars", "wins")
     print(ranking.rank)
-
-    formatted = await client.formatted.get("7f2996146af142948f9479d06f133874")
+    
+    # Get the formatted name of a Player, in this case, Technoblade (UUID: b876ec32e396476ba1158438d83c67d4) -> §d[PIG§b+++§d] Technoblade
+    formatted = await client.formatted.get("b876ec32e396476ba1158438d83c67d4")
     print(formatted.formatted)
 
-asyncio.get_event_loop().run_until_complete(main())
+asyncio.get_event_loop().run_until_complete(main()) # launch the main function
