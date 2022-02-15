@@ -16,7 +16,7 @@
   - [Introduction](https://github.com/Polsulpicien/ObserverAPI/#introduction)  
   - [Installing](https://github.com/Polsulpicien/ObserverAPI/#installing)  
   - [Usage](https://github.com/Polsulpicien/ObserverAPI/#usage)  
-  - [Documentation](https://github.com/Polsulpicien/ObserverAPI/#documentation)  
+  - [Links](https://github.com/Polsulpicien/ObserverAPI/#links)  
   - [License](https://github.com/Polsulpicien/ObserverAPI/#license) 
 
 ## Introduction  
@@ -72,9 +72,12 @@ asyncio.get_event_loop().run_until_complete(main()) # launch the main function
 ```
 You can find this example in the [`tests` folder](https://github.com/Polsulpicien/ObserverAPI/tree/main/tests)
 
-## Documentation
+## Links
 
-Documentation is coming soon...
+- [Documentation](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md)
+- [Official Polsu Server](https://discord.gg/xm9QX3Q)
+- [Observer API](https://api.invite.observer/)
+- [Official Observer Server](https://discord.gg/dcDt9j8fXf)
 
 ## License
 This project is under the [MIT License](https://github.com/Polsulpicien/ObserverAPI/blob/main/LICENSE).
