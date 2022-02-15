@@ -30,7 +30,7 @@ Each class has a `data` argument so you can get the raw data if you want/need it
   - None
 
 - Raises:
-  - APIError
+  - APIError > An error occured.
 
 - Return:
   - `trackedPlayers` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Player Tracked by the Observer API
