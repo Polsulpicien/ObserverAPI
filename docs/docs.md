@@ -183,3 +183,7 @@ Each class has a `data` argument so you can get the raw data if you want/need it
 
   - Return Type:
     - [Formatted](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/objects/player.py#L1)
+
+## Examples
+
+You can find Examples in the [`tests` folder](https://github.com/Polsulpicien/ObserverAPI/tree/main/tests)
