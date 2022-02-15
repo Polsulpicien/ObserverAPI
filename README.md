@@ -74,7 +74,7 @@ You can find this example in the [`tests` folder](https://github.com/Polsulpicie
 
 ## Links
 
-- [Documentation](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md)
+- [Documentation](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs.md)
 - [Official Polsu Server](https://discord.gg/xm9QX3Q)
 - [Observer API](https://api.invite.observer/)
 - [Official Observer Server](https://discord.gg/dcDt9j8fXf)
