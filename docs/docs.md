@@ -4,7 +4,7 @@
 
 **Observer Client, this will be useful when they will add the api key.**
 
--  [`stats`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/docs/docs.md#stats) > Wrapper on the [Stats](https://api.invite.observer/v1/stats) endpoint of the Observer API
+-  [`stats`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#stats) > Wrapper on the [Stats](https://api.invite.observer/v1/stats) endpoint of the Observer API
 > Returns the count of tracked players, total number of commands executed and verified players for Observer  
 -  `lookback` > Wrapper on the [Lookback](https://api.invite.observer/v1/lookback) endpoint of the Observer API
 > Get the stats for a player from X days ago  
