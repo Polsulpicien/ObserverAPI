@@ -13,11 +13,11 @@
     <h3>Observer API Wrapper in Python</h3>
 </p>
 
-  • [Introduction](https://github.com/Polsulpicien/ObserverAPI/#introduction)  
-  • [Installing](https://github.com/Polsulpicien/ObserverAPI/#installing)  
-  • [Usage](https://github.com/Polsulpicien/ObserverAPI/#usage)  
-  • [Documentation](https://github.com/Polsulpicien/ObserverAPI/#documentation)  
-  • [License](https://github.com/Polsulpicien/ObserverAPI/#license) 
+  - [Introduction](https://github.com/Polsulpicien/ObserverAPI/#introduction)  
+  - [Installing](https://github.com/Polsulpicien/ObserverAPI/#installing)  
+  - [Usage](https://github.com/Polsulpicien/ObserverAPI/#usage)  
+  - [Documentation](https://github.com/Polsulpicien/ObserverAPI/#documentation)  
+  - [License](https://github.com/Polsulpicien/ObserverAPI/#license) 
 
 ## Introduction  
   
