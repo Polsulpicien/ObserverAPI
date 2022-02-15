@@ -26,13 +26,13 @@ Each class has a `data` argument so you can get the raw data if you want/need it
 - `await stats.get() -> Stats`  
   *This function is a [coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine).*
 
-- Parameters:
-  - None
+  - Parameters:
+    - None
 
-- Raises:
-  - APIError > An error occured.
+  - Raises:
+    - APIError > An error occured.
 
-- Return:
-  - `trackedPlayers` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Player Tracked by the Observer API
-  - `commandsExecuted` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Commands Executed via the Observer API
-  - `verifiedUsers` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Verified Users in the Observer API
+  - Return:
+    - `trackedPlayers` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Player Tracked by the Observer API
+    - `commandsExecuted` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Commands Executed via the Observer API
+    - `verifiedUsers` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Verified Users in the Observer API
