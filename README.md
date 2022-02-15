@@ -32,7 +32,7 @@ Install the `ObserverAPI` using `pip`
 py -m pip install ObserverAPI
 ```  
 
-*This library was only tested with python 3.10 but I set it to 3.6 since I think everything should work. Please report me any issues! Thank you.*  
+*This library was only tested with python 3.10 but I set it to 3.8 since I think everything should work. Please report me any issues! Thank you.*  
 
 ## Usage
 
