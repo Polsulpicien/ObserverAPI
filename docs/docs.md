@@ -10,13 +10,13 @@
 > Get the stats for a player from X days ago  
 -  [`ranking`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#ranking) > Wrapper on the [Ranking](https://api.invite.observer/v1/ranking) endpoint of the Observer API
 > Get the ranking for a player on a specific leaderboard  
--  `daily` > Wrapper on the [Daily](https://api.invite.observer/v1/daily) endpoint of the Observer API
+-  [`daily`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#rankdailying) > Wrapper on the [Daily](https://api.invite.observer/v1/daily) endpoint of the Observer API
 > Get the stats of a player from yesterday  
--  `weekly` > Wrapper on the [Weekly](https://api.invite.observer/v1/weekly) endpoint of the Observer API
+-  [`weekly`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#weekly) > Wrapper on the [Weekly](https://api.invite.observer/v1/weekly) endpoint of the Observer API
 > Get the stats of a player from the beginning of the week (Sunday)  
--  `monthly` > Wrapper on the [Monhtly](https://api.invite.observer/v1/monthly) endpoint of the Observer API
+-  [`monthly`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#monthly) > Wrapper on the [Monhtly](https://api.invite.observer/v1/monthly) endpoint of the Observer API
 > Get the stats of a player from the first day of the month  
--  `formatted` > Wrapper on the [Formatted](https://api.invite.observer/v1/formatted) endpoint of the Observer API
+-  [`formatted`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#formatted) > Wrapper on the [Formatted](https://api.invite.observer/v1/formatted) endpoint of the Observer API
 > Get the formatted name of a player if they're registered on Observer  
 
 Each class has a `data` argument so you can get the raw data if you want/need it.
@@ -60,14 +60,34 @@ Each class has a `data` argument so you can get the raw data if you want/need it
 
 ## Ranking
 
-- `await ranking.get(uuid : str, type : str, gamemode : str, stat : str) -> Lookback`  
+- `await ranking.get(uuid : str, type : str, gamemode : str, stat : str) -> Ranking`  
   *This function is a [coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine).*
 
   - Parameters:
     - `uuid` ([str](https://docs.python.org/3/library/functions.html#str)) > A Player UUID
     - `type` ([str](https://docs.python.org/3/library/functions.html#int)) > A [Observer API Type](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/parameters.md#type)
+    - `gamemode` ([str](https://docs.python.org/3/library/functions.html#int)) > A [Observer API Type](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/parameters.md#gamemode)
+    - `stat` ([str](https://docs.python.org/3/library/functions.html#int)) > A [Observer API Type](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/parameters.md#stat)
 
   - Raises:
+    - APIError > An error occured.
+
+  - Return:
+    - `rank` ([int](https://docs.python.org/3/library/functions.html#int)) > The Player Rank
+
+  - Return Type:
+    - [Ranking](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/objects/ranking.py#L1)
+
+
+## Daily
+
+- `await daily.get(uuid : str) -> Daily`  
+  *This function is a [coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine).*
+
+  - Parameters:
+    - `uuid` ([str](https://docs.python.org/3/library/functions.html#str)) > A Player UUID
+
+- Raises:
     - APIError > An error occured.
 
   - Return:
@@ -75,3 +95,54 @@ Each class has a `data` argument so you can get the raw data if you want/need it
 
   - Return Type:
     - [Player](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/objects/player.py#L5)
+
+## Weekly
+
+- `await weekly.get(uuid : str) -> Weekly`  
+  *This function is a [coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine).*
+
+  - Parameters:
+    - `uuid` ([str](https://docs.python.org/3/library/functions.html#str)) > A Player UUID
+
+- Raises:
+    - APIError > An error occured.
+
+  - Return:
+    - [Player Class](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/player.md)
+
+  - Return Type:
+    - [Player](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/objects/player.py#L5)
+
+## Monthly
+
+- `await daily.get(uuid : str) -> Monthly`  
+  *This function is a [coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine).*
+
+  - Parameters:
+    - `uuid` ([str](https://docs.python.org/3/library/functions.html#str)) > A Player UUID
+
+- Raises:
+    - APIError > An error occured.
+
+  - Return:
+    - [Player Class](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/player.md)
+
+  - Return Type:
+    - [Player](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/objects/player.py#L5)
+
+## Formatted
+
+- `await daily.get(uuid : str) -> Formatted`  
+  *This function is a [coroutine](https://docs.python.org/3/library/asyncio-task.html#coroutine).*
+
+  - Parameters:
+    - `uuid` ([str](https://docs.python.org/3/library/functions.html#str)) > A Player UUID
+
+- Raises:
+    - APIError > An error occured.
+
+  - Return:
+    - `formatted` ([str](https://docs.python.org/3/library/functions.html#str)) > The Formatted Name of the Player
+
+  - Return Type:
+    - [Formatted](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/objects/player.py#L1)
