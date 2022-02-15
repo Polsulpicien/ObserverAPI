@@ -53,35 +53,7 @@ Each class has a `data` argument so you can get the raw data if you want/need it
     - APIError > An error occured.
 
   - Return:
-    - `timestamp` ([int](https://docs.python.org/3/library/functions.html#int)) > ?
-    - `wins` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Wins
-    - `coins` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Coins
-    - `karma` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Karma
-    - `achievementPoints` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Achievement Points
-    - `experience` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Experience
-    - `quests` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Quests
-    - `challenges` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Challenges
-    - `reset` ([int](https://docs.python.org/3/library/functions.html#int)) > Time of the last reset
-
-    - `arenabrawl` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `bedwars` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `blitz` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `buildbattle` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `copsandcrims` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `duels` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `megawalls` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `murdermystery` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `paintball` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `quakecraft` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `skywars` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `smashheroes` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `speeduhc` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `tntgames` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `turbokart` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `uhc` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `vampirez` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `walls` ([int](https://docs.python.org/3/library/functions.html#int)) >
-    - `warlords` ([int](https://docs.python.org/3/library/functions.html#int)) >
+    - Player Class
 
 
   - Return Type:
