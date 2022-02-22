@@ -12,7 +12,7 @@
 > Get the leaderboards for a specific timeframe, gamemode and stat-type
 -  [`ranking`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#ranking) > Wrapper on the [Ranking](https://api.invite.observer/v1/ranking) endpoint of the Observer API
 > Get the ranking for a player on a specific leaderboard  
--  [`daily`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#rankdailying) > Wrapper on the [Daily](https://api.invite.observer/v1/daily) endpoint of the Observer API
+-  [`daily`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#daily) > Wrapper on the [Daily](https://api.invite.observer/v1/daily) endpoint of the Observer API
 > Get the stats of a player from yesterday  
 -  [`weekly`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#weekly) > Wrapper on the [Weekly](https://api.invite.observer/v1/weekly) endpoint of the Observer API
 > Get the stats of a player from the beginning of the week (Sunday)  

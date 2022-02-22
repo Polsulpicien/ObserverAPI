@@ -12,4 +12,4 @@ class Index:
         self.rank = data[index].get("rank", 0)
         self.id = data[index].get("id", 0)
         self.value = data[index].get("value", 0)
-        self.formatted = data[index].get("formatted", "")
+        self.formatted = data[index].get("formatted", "") 

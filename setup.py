@@ -29,7 +29,7 @@ with open("README.md") as readme:
     
 setup(
     name='ObserverAPI',
-    version='1.0.3',
+    version='1.1.0',
     license='MIT',
     author="Polsulpicien",
     description="Observer API Wrapper in Python",
