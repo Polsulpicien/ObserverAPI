@@ -19,6 +19,13 @@
   - [Links](https://github.com/Polsulpicien/ObserverAPI/#links)  
   - [License](https://github.com/Polsulpicien/ObserverAPI/#license) 
 
+\
+```
+This is not the final version. You can find the final version on the Beta Branch of this repo. 
+It will be released when all the docs will be done ;)
+```
+/
+
 ## Introduction  
   
 This is the first [Observer API](https://discord.gg/dcDt9j8fXf) Wrapper in Python.  
