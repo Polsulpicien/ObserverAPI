@@ -1,7 +1,6 @@
 class Leaderboards:
     def __init__(self, data):
         self.data = data
-        self.success = data.get("success", {})
         self.leaderboard = data.get("leaderboards", {})
 
     def get_index(self, index:int):
