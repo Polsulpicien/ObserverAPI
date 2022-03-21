@@ -6,13 +6,13 @@ This public API lets you access almost everything our backend keeps track of. Pl
 
 ***
 
-- [`Documentation`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#documentation)  
-- [`Notes`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#notes)  
-- [`Examples`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#examples)  
+- [`Documentation`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/blob/main/docs/docs.md#documentation)  
+- [`Notes`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/blob/main/docs/docs.md#notes)  
+- [`Examples`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/blob/main/docs/docs.md#examples)  
 
 # Documentation
 
-- [`ObserverAPI.Observer()`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/client.py#L3)
+- [`ObserverAPI.Observer()`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/client.py#L5)
 > Main function to start the Client.  
   This Function will also make your life easier, since you will only have to provide your API Key once!
 
@@ -283,7 +283,7 @@ Each class has a `data` argument so you can get the raw data if you want/need it
     - [`APIError`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/exception.py#L1) > An error occured.
 
   - Return:
-    - [List](https://docs.python.org/3/library/functions.html#list) > A list of [Ranking](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#ranking) object
+    - [List](https://docs.python.org/3/library/functions.html#list) > A list of [Ranking](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#L271) object
 
 ***
 
@@ -311,7 +311,7 @@ Each class has a `data` argument so you can get the raw data if you want/need it
     - [`APIError`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/exception.py#L1) > An error occured.
 
   - Return:
-    - [List](https://docs.python.org/3/library/functions.html#list) > A list of [Formatted](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#formatted) object
+    - [List](https://docs.python.org/3/library/functions.html#list) > A list of [Formatted](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#L302) object
 
 ## Stats
 
@@ -353,8 +353,8 @@ Each class has a `data` argument so you can get the raw data if you want/need it
 
 You can find all examples in the [`examples` folder](https://github.com/Polsulpicien/ObserverAPI/tree/main/examples)
 
-- [`Basic`](https://github.com/Polsulpicien/ObserverAPI/blob/main/examples/main.py)
-- [`Register`](https://github.com/Polsulpicien/ObserverAPI/blob/main/examples/register.py)
-- [`Daily / Weekly / Monthly`](https://github.com/Polsulpicien/ObserverAPI/blob/main/examples/daily.py)
+- [`Basic`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/tree/main/examples/main.py)
+- [`Register`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/tree/main/examples/register.py)
+- [`Daily / Weekly / Monthly`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/tree/main/examples/daily.py)
 
 *I haven't made examples on all endpoints, tell me if you want some ;)*
