@@ -283,7 +283,7 @@ Each class has a `data` argument so you can get the raw data if you want/need it
     - [`APIError`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/exception.py#L1) > An error occured.
 
   - Return:
-    - [List](https://docs.python.org/3/library/functions.html#list) > A list of [Ranking](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#L271) object
+    - [List](https://docs.python.org/3/library/functions.html#list) > A list of [Ranking](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#ranking) object
 
 ***
 
@@ -311,7 +311,7 @@ Each class has a `data` argument so you can get the raw data if you want/need it
     - [`APIError`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/exception.py#L1) > An error occured.
 
   - Return:
-    - [List](https://docs.python.org/3/library/functions.html#list) > A list of [Formatted](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#L302) object
+    - [List](https://docs.python.org/3/library/functions.html#list) > A list of [Formatted](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#formatted) object
 
 ## Stats
 
