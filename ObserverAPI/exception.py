@@ -3,6 +3,15 @@ class APIError(Exception):
         self.error = error
         self.status_code = code
 
-class HistoryLimitError(Exception):
+class InvalidAPIKeyError(Exception):
     def __init__(self):
-        self.error = "Can not look back more than 100 days!" 
+        self.error = "Invalid API key"
+
+class NotRegistered(Exception):
+    def __init__(self, player):
+        self.error = f"Player not Registered: {player}"
+        self.player = player
+
+class BadRequest(Exception):
+    def __init__(self, error):
+        self.error = error

@@ -29,13 +29,15 @@ It will be released when all the docs will be done ;)
 ## Introduction  
   
 This is the first [Observer API](https://discord.gg/dcDt9j8fXf) Wrapper in Python.  
+This API Wrapper currently supports **all** endpoints (GET and POST).  
+You can find them all in the [Documentation](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md).
 
 If you need help please join **[Polsu Development Support Server](https://discord.gg/xm9QX3Q)**.   
 
 ## Installing  
 
-Install the `ObserverAPI` using [`pip`](https://pypi.org/project/ObserverAPI/1.0.3/)  
-**> Current Version: `1.0.3`**
+Install the `ObserverAPI` using [`pip`](https://pypi.org/project/ObserverAPI)  
+**> Current Version: `1.1.0`**
 ```
 py -m pip install ObserverAPI
 ```  
@@ -50,7 +52,7 @@ from ObserverAPI import Observer
 import asyncio
 
 async def main():
-    client = await Observer() #define the client
+    client = await Observer(key="XXX") #define the client with your Observer API Key
 
     # Get the stats of Technoblade (UUID: b876ec32e396476ba1158438d83c67d4) 100 days ago
     lookback = await client.lookback.get("b876ec32e396476ba1158438d83c67d4", 100)
@@ -78,7 +80,7 @@ async def main():
 
 asyncio.get_event_loop().run_until_complete(main()) # launch the main function
 ```
-You can find this example in the [`tests` folder](https://github.com/Polsulpicien/ObserverAPI/tree/main/tests)
+You can find this example and more examples in the [`examples` folder](https://github.com/Polsulpicien/ObserverAPI/tree/main/tests)
 
 ## Links
 
