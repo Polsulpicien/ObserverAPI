@@ -6,9 +6,9 @@ This public API lets you access almost everything our backend keeps track of. Pl
 
 ***
 
-- [`Documentation`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/blob/main/docs/docs.md#documentation)  
-- [`Notes`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/blob/main/docs/docs.md#notes)  
-- [`Examples`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/blob/main/docs/docs.md#examples)  
+- [`Documentation`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#documentation)  
+- [`Notes`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#notes)  
+- [`Examples`](https://github.com/Polsulpicien/ObserverAPI/blob/main/docs/docs.md#examples)  
 
 # Documentation
 
