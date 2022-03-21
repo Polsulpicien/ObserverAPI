@@ -11,4 +11,5 @@ class Key:
         self.key = data.get("record", {}).get("key", 0)
         self.owner = data.get("record", {}).get("owner", 0)
         self.limit = data.get("record", {}).get("limit", 0)
+        self.minute_queries = data.get("record", {}).get("queriesInPastMin", 0)
         self.total_queries = data.get("record", {}).get("totalQueries", 0)

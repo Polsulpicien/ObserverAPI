@@ -1,40 +1,75 @@
 class Formatted:
-    def __init__(self, data):
-        self.formatted = data.get("formatted", {})
+    def __init__(self, data, uuids:str=""):
+        self.data = data
+        if uuids=="":
+            self.formatted = data.get("formatted", {})
+        else:
+            self.formatted = data
 
 class Player:
-    def __init__(self, data, api:str):
+    def __init__(self, data, api:str=""):
         self.data = data
-        
-        self.timestamp = data.get(api, {}).get("timestamp", 0)
-        self.wins = data.get(api, {}).get("wins", 0)
-        self.coins = data.get(api, {}).get("coins", 0)
-        self.karma = data.get(api, {}).get("karma", 0)
-        self.achievementPoints = data.get(api, {}).get("achievementPoints", 0)
-        self.experience = data.get(api, {}).get("experience", 0)
-        self.quests = data.get(api, {}).get("quests", 0)
-        self.challenges = data.get(api, {}).get("challenges", 0)
-        self.reset = data.get(api, {}).get("reset", {})
 
-        self.arenabrawl = ArenaBrawl(data.get(api, {}).get("stats", {}).get("arenabrawl", {}))
-        self.bedwars = Bedwars(data.get(api, {}).get("stats", {}).get("bedwars", {}))
-        self.blitz = Blitz(data.get(api, {}).get("stats", {}).get("blitzsurvivalgames", {}))
-        self.buildbattle = BuildBattle(data.get(api, {}).get("stats", {}).get("buildbattle", {}))
-        self.copsandcrims = CopsandCrims(data.get(api, {}).get("stats", {}).get("copsandcrims", {}))
-        self.duels = Duels(data.get(api, {}).get("stats", {}).get("duels", {}))
-        self.megawalls = MegaWalls(data.get(api, {}).get("stats", {}).get("megawalls", {}))
-        self.murdermystery = MurderMystery(data.get(api, {}).get("stats", {}).get("murdermystery", {}))
-        self.paintball = Paintball(data.get(api, {}).get("stats", {}).get("paintball", {}))
-        self.quakecraft = Quakecraft(data.get(api, {}).get("stats", {}).get("quakecraft", {}))
-        self.skywars = Skywars(data.get(api, {}).get("stats", {}).get("skywars", {}))
-        self.smashheroes = SmashHeroes(data.get(api, {}).get("stats", {}).get("smashheroes", {}))
-        self.speeduhc = SpeedUHC(data.get(api, {}).get("stats", {}).get("speeduhc", {}))
-        self.tntgames = TntGames(data.get(api, {}).get("stats", {}).get("tntgame", {}))
-        self.turbokart = TurboKart(data.get(api, {}).get("stats", {}).get("turbokartracers", {}))
-        self.uhc = UHC(data.get(api, {}).get("stats", {}).get("uhc", {}))
-        self.vampirez = VampireZ(data.get(api, {}).get("stats", {}).get("vampirez", {}))
-        self.walls = Walls(data.get(api, {}).get("stats", {}).get("walls", {}))
-        self.warlords = Warlords(data.get(api, {}).get("stats", {}).get("warlords", {}))
+        if api!="":
+            self.timestamp = data.get(api, {}).get("timestamp", 0)
+            self.wins = data.get(api, {}).get("wins", 0)
+            self.coins = data.get(api, {}).get("coins", 0)
+            self.karma = data.get(api, {}).get("karma", 0)
+            self.achievementPoints = data.get(api, {}).get("achievementPoints", 0)
+            self.experience = data.get(api, {}).get("experience", 0)
+            self.quests = data.get(api, {}).get("quests", 0)
+            self.challenges = data.get(api, {}).get("challenges", 0)
+            self.reset = data.get(api, {}).get("reset", {})
+
+            self.arenabrawl = ArenaBrawl(data.get(api, {}).get("stats", {}).get("arenabrawl", {}))
+            self.bedwars = Bedwars(data.get(api, {}).get("stats", {}).get("bedwars", {}))
+            self.blitz = Blitz(data.get(api, {}).get("stats", {}).get("blitzsurvivalgames", {}))
+            self.buildbattle = BuildBattle(data.get(api, {}).get("stats", {}).get("buildbattle", {}))
+            self.copsandcrims = CopsandCrims(data.get(api, {}).get("stats", {}).get("copsandcrims", {}))
+            self.duels = Duels(data.get(api, {}).get("stats", {}).get("duels", {}))
+            self.megawalls = MegaWalls(data.get(api, {}).get("stats", {}).get("megawalls", {}))
+            self.murdermystery = MurderMystery(data.get(api, {}).get("stats", {}).get("murdermystery", {}))
+            self.paintball = Paintball(data.get(api, {}).get("stats", {}).get("paintball", {}))
+            self.quakecraft = Quakecraft(data.get(api, {}).get("stats", {}).get("quakecraft", {}))
+            self.skywars = Skywars(data.get(api, {}).get("stats", {}).get("skywars", {}))
+            self.smashheroes = SmashHeroes(data.get(api, {}).get("stats", {}).get("smashheroes", {}))
+            self.speeduhc = SpeedUHC(data.get(api, {}).get("stats", {}).get("speeduhc", {}))
+            self.tntgames = TntGames(data.get(api, {}).get("stats", {}).get("tntgame", {}))
+            self.turbokart = TurboKart(data.get(api, {}).get("stats", {}).get("turbokartracers", {}))
+            self.uhc = UHC(data.get(api, {}).get("stats", {}).get("uhc", {}))
+            self.vampirez = VampireZ(data.get(api, {}).get("stats", {}).get("vampirez", {}))
+            self.walls = Walls(data.get(api, {}).get("stats", {}).get("walls", {}))
+            self.warlords = Warlords(data.get(api, {}).get("stats", {}).get("warlords", {}))
+        else:
+            self.timestamp = data.get("timestamp", 0)
+            self.wins = data.get("wins", 0)
+            self.coins = data.get("coins", 0)
+            self.karma = data.get("karma", 0)
+            self.achievementPoints = data.get("achievementPoints", 0)
+            self.experience = data.get("experience", 0)
+            self.quests = data.get("quests", 0)
+            self.challenges = data.get("challenges", 0)
+            self.reset = data.get("reset", {})
+
+            self.arenabrawl = ArenaBrawl(data.get("stats", {}).get("arenabrawl", {}))
+            self.bedwars = Bedwars(data.get("stats", {}).get("bedwars", {}))
+            self.blitz = Blitz(data.get("stats", {}).get("blitzsurvivalgames", {}))
+            self.buildbattle = BuildBattle(data.get("stats", {}).get("buildbattle", {}))
+            self.copsandcrims = CopsandCrims(data.get("stats", {}).get("copsandcrims", {}))
+            self.duels = Duels(data.get("stats", {}).get("duels", {}))
+            self.megawalls = MegaWalls(data.get("stats", {}).get("megawalls", {}))
+            self.murdermystery = MurderMystery(data.get("stats", {}).get("murdermystery", {}))
+            self.paintball = Paintball(data.get("stats", {}).get("paintball", {}))
+            self.quakecraft = Quakecraft(data.get("stats", {}).get("quakecraft", {}))
+            self.skywars = Skywars(data.get("stats", {}).get("skywars", {}))
+            self.smashheroes = SmashHeroes(data.get("stats", {}).get("smashheroes", {}))
+            self.speeduhc = SpeedUHC(data.get("stats", {}).get("speeduhc", {}))
+            self.tntgames = TntGames(data.get("stats", {}).get("tntgame", {}))
+            self.turbokart = TurboKart(data.get("stats", {}).get("turbokartracers", {}))
+            self.uhc = UHC(data.get("stats", {}).get("uhc", {}))
+            self.vampirez = VampireZ(data.get("stats", {}).get("vampirez", {}))
+            self.walls = Walls(data.get("stats", {}).get("walls", {}))
+            self.warlords = Warlords(data.get("stats", {}).get("warlords", {}))
 
 class ArenaBrawl:
     def __init__(self, data):

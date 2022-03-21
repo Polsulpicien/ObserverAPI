@@ -1,6 +1,9 @@
 class Ranking:
-    def __init__(self, data):
+    def __init__(self, data, uuid:str=""):
         self.data = data
-        self.rank = int(data.get("ranking", 0))
+        if uuid=="":
+            self.rank = int(data.get("ranking", 0))
+        else:
+            self.rank = int(data)
 
-    # will be improved in the future... or not.
+# If you want to be able to get the leaderboard coresponding to the rank, tell me and I might add it here ;)
