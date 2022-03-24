@@ -182,11 +182,12 @@ class Observer:
             async with aiohttp.request("GET", f"{self.api}/history?key={self.key}&uuid={uuid}&from={start}&to={end}") as response:
                 json = await response.json()
                 if json['success']==True:
-                    if json['history']==[]:
-                        return Player(DEFAULT)
                     days = []
                     for i in range(0, (end-start)-1):
-                        days.append(Player(json['history'][i]))
+                        if json['history']==[]:
+                            days.append(Player(DEFAULT))
+                        else:
+                            days.append(Player(json['history'][i]))
                     return days
                 else:
                     if json['cause']=="Invalid API key":
@@ -207,15 +208,15 @@ class Observer:
                 if json['success']==True:
                     players = []
                     for u in uuids:
-                        if json['history'][u]==[]:
-                            players.append([Player(DEFAULT)])
-                        else:
-                            days = []
-                            for i in range(0, (end-start)-1):
+                        days = []
+                        for i in range(0, (end-start)-1):
+                            if json['history']==[]:
+                                days.append(Player(DEFAULT))
+                            else:
                                 try:
                                     days.append(Player(json['history'][u][i]))
                                 except:
-                                    players.append(Player(DEFAULT))
+                                    days.append(Player(DEFAULT))
                             players.append(days)
                     return players
                 else:

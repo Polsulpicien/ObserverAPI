@@ -2,7 +2,7 @@ from . import requests
 
 async def Observer(key:str, message=True, show_key=False):
     client = ObserverClient(key)
-    key = await client.api.get()
+    key = await client.key.get()
     if message==True:
         if show_key==True:
             print(f"\nObserverAPI >>https://github.com/Polsulpicien/ObserverAPI<<\n\nClient started successfully:\n- Owner: {key.owner} [https://lookup.guru/{key.owner}]\n- Key: {key.key}\n- Limit: {key.limit}\n- Minute Queries: {key.minute_queries}\n- Total Queries: {key.total_queries}\n")

@@ -7,12 +7,7 @@
         <a href="https://discord.gg/dcDt9j8fXf"><img src="https://img.shields.io/discord/763987695374434306?color=blue&label=Observer Discord&logo=discord&style=for-the-badge" alt="Discord"></a>  
         <br>
         <a href="https://github.com/Polsulpicien/ObserverAPI"><img src="https://img.shields.io/github/stars/Polsulpicien/ObserverAPI?style=for-the-badge" alt="Stars"></a>
-        <a href="https://github.com/Polsulpicien/ObserverAPI"><img src="https://img.shields.io/github/v/release/polsulpicien/ObserverAPI?color=red&label=Version&logo=github&style=for-the-badge" alt="Version"></a>  
-        <br>
-        <a href="https://pypi.org/project/ObserverAPI/"><img src="https://img.shields.io/pypi/dd/observerapi?color=yellow&label=PyPI%20Downloads&logo=PyPI&logoColor=white&style=for-the-badge" alt="Pip Downloads"></a>
-        <a href="https://pypi.org/project/ObserverAPI/"><img src="https://img.shields.io/pypi/dw/observerapi?label=PyPI%20Downloads&logo=PyPI&logoColor=white&style=for-the-badge" alt="Pip Downloads"></a>
-        <a href="https://pypi.org/project/ObserverAPI/"><img src="https://img.shields.io/pypi/dm/observerapi?label=PyPI%20Downloads&logo=PyPI&logoColor=white&style=for-the-badge" alt="Pip Downloads"></a>
-    
+        <a href="https://github.com/Polsulpicien/ObserverAPI"><img src="https://img.shields.io/github/v/release/polsulpicien/ObserverAPI?color=red&label=Version&logo=github&style=for-the-badge" alt="Version"></a>
 </div>
 <p align="center">
     <h3>Observer API Wrapper in Python</h3>
@@ -37,7 +32,7 @@ If you need help please join **[Polsu Development Support Server](https://discor
 Install the `ObserverAPI` using [`pip`](https://pypi.org/project/ObserverAPI)  
 **> Current Version: `1.1.3`**
 ```
-py -m pip install -U ObserverAPI
+py -m pip install ObserverAPI
 ```  
 
 *This library was only tested with python 3.10 but I set it to 3.8 since I think everything should work. Please report me any issues! Thank you.*  
