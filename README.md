@@ -30,7 +30,7 @@ If you need help please join **[Polsu Development Support Server](https://discor
 ## Installing  
 
 Install the `ObserverAPI` using [`pip`](https://pypi.org/project/ObserverAPI)  
-**> Current Version: `1.1.3`**
+**> Current Version: `1.1.5`**
 ```
 py -m pip install ObserverAPI
 ```  
