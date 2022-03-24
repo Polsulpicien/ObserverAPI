@@ -12,7 +12,7 @@ This public API lets you access almost everything our backend keeps track of. Pl
 
 # Documentation
 
-- [`ObserverAPI.Observer()`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/client.py#L5)
+- [`ObserverAPI.Observer()`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/client.py#L2)
 > Main function to start the Client.  
   This Function will also make your life easier, since you will only have to provide your API Key once!
 
