@@ -53,7 +53,7 @@ async def main():
     
     # Observer API Stats
     api_stats = await client.stats.get()
-    print(api_stats.trackedPlayers)
+    print(api_stats.tracked_players)
     
     # Get the Top 10 players, All-Time Bedwars Wins Leaderboard 
     leaderboard = await client.leaderboard.get("alltime", "bedwars", "wins", 1, 10)
