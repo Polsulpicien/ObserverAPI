@@ -322,9 +322,9 @@ Each class has a `data` argument so you can get the raw data if you want/need it
     - [`APIError`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/exception.py#L1) > An error occured.
 
   - Return:
-    - `trackedPlayers` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Player Tracked by the Observer API
-    - `commandsExecuted` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Commands Executed via the Observer API
-    - `verifiedUsers` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Verified Users in the Observer API
+    - `tracked_players` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Player Tracked by the Observer API
+    - `commands_executed` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Commands Executed via the Observer API
+    - `verified_users` ([int](https://docs.python.org/3/library/functions.html#int)) > Number of Verified Users in the Observer API
 
 ## Key
 
