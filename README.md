@@ -8,6 +8,11 @@
         <br>
         <a href="https://github.com/Polsulpicien/ObserverAPI"><img src="https://img.shields.io/github/stars/Polsulpicien/ObserverAPI?style=for-the-badge" alt="Stars"></a>
         <a href="https://github.com/Polsulpicien/ObserverAPI"><img src="https://img.shields.io/github/v/release/polsulpicien/ObserverAPI?color=red&label=Version&logo=github&style=for-the-badge" alt="Version"></a>
+        <a href="https://github.com/Polsulpicien/ObserverAPI"><img src="https://img.shields.io/github/v/release/polsulpicien/ObserverAPI?color=red&label=Version&logo=github&style=for-the-badge" alt="Version"></a>  
+        <br>
+        <a href="https://pypi.org/project/ObserverAPI/"><img src="https://img.shields.io/pypi/dd/observerapi?color=yellow&label=PyPI%20Downloads&logo=PyPI&logoColor=white&style=for-the-badge" alt="Pip Downloads"></a>
+        <a href="https://pypi.org/project/ObserverAPI/"><img src="https://img.shields.io/pypi/dw/observerapi?label=PyPI%20Downloads&logo=PyPI&logoColor=white&style=for-the-badge" alt="Pip Downloads"></a>
+        <a href="https://pypi.org/project/ObserverAPI/"><img src="https://img.shields.io/pypi/dm/observerapi?label=PyPI%20Downloads&logo=PyPI&logoColor=white&style=for-the-badge" alt="Pip Downloads"></a>
 </div>
 <p align="center">
     <h3>Observer API Wrapper in Python</h3>
