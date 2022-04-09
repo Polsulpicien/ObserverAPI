@@ -353,8 +353,8 @@ Each class has a `data` argument so you can get the raw data if you want/need it
 
 You can find all examples in the [`examples` folder](https://github.com/Polsulpicien/ObserverAPI/tree/main/examples)
 
-- [`Basic`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/tree/main/examples/main.py)
-- [`Register`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/tree/main/examples/register.py)
-- [`Daily / Weekly / Monthly`](https://github.com/Polsulpicien/ObserverAPI/blob/main/ObserverAPI/tree/main/examples/daily.py)
+- [`Basic`](https://github.com/Polsulpicien/ObserverAPI/tree/main/examples/main.py)
+- [`Register`](https://github.com/Polsulpicien/ObserverAPI/tree/main/examples/register.py)
+- [`Daily / Weekly / Monthly`](https://github.com/Polsulpicien/ObserverAPI/tree/main/examples/daily.py)
 
 *I haven't made examples on all endpoints, tell me if you want some ;)*
