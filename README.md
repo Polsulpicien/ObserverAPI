@@ -77,7 +77,7 @@ async def main():
 
 asyncio.get_event_loop().run_until_complete(main()) # launch the main function
 ```
-You can find this example and more examples in the [`examples` folder](https://github.com/Polsulpicien/ObserverAPI/tree/main/tests)
+You can find this example and more examples in the [`examples` folder](https://github.com/Polsulpicien/ObserverAPI/tree/main/examples)
 
 ## Links
 
